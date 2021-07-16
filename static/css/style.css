@@ -514,18 +514,20 @@ nav.navigation a.button {
 }
 
 #single .toc__title {
-  color: #757575;
-  font-size: 18px;
-  padding: 4px 8px;
+  color: #8c8c8c;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 25px;
 }
 
 #TableOfContents {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 #TableOfContents ul {
   margin: 0px;
-  padding: 0px;
+  padding-left: 20px;
 }
 
 #TableOfContents ul li {
