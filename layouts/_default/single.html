@@ -25,21 +25,26 @@
         </span>
     </div>
 
-    <div class="content">
-      {{  .Content }}
-    </div>
-
     {{ with .Params.tags }}
         <div class="tags">
             {{ range . }}
                 <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
         </div>
-    {{ end}}
-    
+    {{ end }}
+
+    <div>
+      <aside>
+        {{ .TableOfContents }}
+      </aside>
+    </div>
+
+    <div class="content">
+      {{  .Content }}
+    </div>
+
     {{ partial "comment.html" . }}
 
 </section>
 
 {{ end }}
-
