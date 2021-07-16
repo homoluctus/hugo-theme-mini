@@ -89,15 +89,15 @@ pre {
 .markdown-image img {
   max-width: 100%;
 }
-.anchor { 
-  font-size: 100%; 
-  visibility: hidden; 
+.anchor {
+  font-size: 100%;
+  visibility: hidden;
   color:silver;
 }
 h1:hover a,
 h2:hover a,
 h3:hover a,
-h4:hover a { 
+h4:hover a {
   visibility: visible
 }
 .highlight pre {
@@ -357,8 +357,11 @@ nav.navigation a.button {
 }
 
 #single .tags {
+  text-align: center;
+  margin: auto;
   margin-top: 24px;
 }
+
 #single .tags a {
   background: #f2f2f2;
   padding: 4px 7px;
@@ -382,7 +385,7 @@ nav.navigation a.button {
 }
 
 #archive .group {
-  margin: 24px auto; 
+  margin: 24px auto;
 }
 #archive .group .key {
   font-size: 20px;
@@ -500,4 +503,41 @@ nav.navigation a.button {
   position: relative;
   top: 1px;
   color: #bbb;
+}
+
+#single .toc {
+  border: 2px solid #dfe5e7;
+  border-left: none;
+  border-right: none;
+  margin-top: 24px;
+  padding: 10px 13px;
+}
+
+#single .toc__title {
+  color: #757575;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+
+#TableOfContents {
+  margin-top: 16px;
+}
+
+#TableOfContents ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#TableOfContents ul li {
+  display: block;
+}
+
+#TableOfContents ul li a {
+  display: block;
+  padding: 4px 8px;
+}
+
+#TableOfContents ul li a:hover {
+  background-color: #5badf0;
+  color: white;
 }
