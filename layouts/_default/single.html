@@ -1,50 +1,50 @@
 {{ define "main" }}
 
 <section id="single">
-    <h1 class="title">{{ .Title }}</h1>
+  <h1 class="title">{{ .Title }}</h1>
 
-    <div class="tip">
-        <span>
-          {{ .Date.Format "Jan 2, 2006 15:04" }}
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          {{ if lt 1 .WordCount }}
-            {{ .WordCount }} words
-          {{ else }}
-              {{ .WordCount }} word
-          {{ end }}
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          {{ .ReadingTime }} minute read
-        </span>
-    </div>
+  <div class="tip">
+    <span>
+      {{ .Date.Format "Jan 2, 2006 15:04" }}
+    </span>
+    <span class="split">
+      ·
+    </span>
+    <span>
+      {{ if lt 1 .WordCount }}
+        {{ .WordCount }} words
+      {{ else }}
+        {{ .WordCount }} word
+      {{ end }}
+    </span>
+    <span class="split">
+      ·
+    </span>
+    <span>
+      {{ .ReadingTime }} minute read
+    </span>
+  </div>
 
-    {{ with .Params.tags }}
-        <div class="tags">
-            {{ range . }}
-                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
-        </div>
+  {{ with .Params.tags }}
+  <div class="tags">
+    {{ range . }}
+      <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
     {{ end }}
+  </div>
+  {{ end }}
 
-    <div class="toc">
-      <aside>
-        <span class="toc__title">ToC</span>
-        {{ .TableOfContents }}
-      </aside>
-    </div>
+  <div class="toc">
+    <aside>
+      <span class="toc__title">ToC</span>
+      {{ .TableOfContents }}
+    </aside>
+  </div>
 
-    <div class="content">
-      {{ .Content }}
-    </div>
+  <div class="content">
+    {{ .Content }}
+  </div>
 
-    {{ partial "comment.html" . }}
+  {{ partial "comment.html" . }}
 
 </section>
 
