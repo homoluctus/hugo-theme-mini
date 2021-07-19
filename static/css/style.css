@@ -123,6 +123,16 @@ pre code {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 
+/* tags */
+
+.tags a:before {
+  content: 'local_offer';
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 14px;
+  vertical-align: middle;
+  padding-right: 3px;
+}
 
 /* navigation */
 
@@ -453,6 +463,13 @@ nav.navigation a.button {
   color: #404040;
   font-size: 14px;
   margin-right: 3px;
+}
+#tags .tag a:before {
+  content: 'local_offer';
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 14px;
+  vertical-align: middle;
 }
 #tags .tag a:hover {
   color: #0366d6;

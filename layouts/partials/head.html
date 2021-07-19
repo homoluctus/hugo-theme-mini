@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
 {{ if .Site.Params.enableGoogleAnalytics }}
