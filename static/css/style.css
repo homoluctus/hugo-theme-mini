@@ -469,6 +469,7 @@ nav.navigation a.button {
   display: inline-block;
   font-family: 'Material Icons';
   font-size: 14px;
+  padding-right: 3px;
   vertical-align: middle;
 }
 #tags .tag a:hover {
